@@ -6,7 +6,8 @@ object DemoSparkSession {
 
   def sparkSession(): SparkSession = {
 
-    val spark = SparkSession.builder().appName("DemoTraining").master("local").getOrCreate()
+    // Spark Session for SparkAzureDataLake111
+    val spark = SparkSession.builder().appName("SparkAzureDataLake").master("local").getOrCreate()
 
     // spark.conf.set("fs.adl.oauth2.access.token.provider.type", "ClientCredential")
     // spark.conf.set("fs.adl.oauth2.client.id", "9f85d142-0304-4a91-832d-23e35cae4619")
